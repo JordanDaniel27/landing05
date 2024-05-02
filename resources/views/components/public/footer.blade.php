@@ -1,92 +1,63 @@
-<footer class="font-poppins bg-[#21201E] text-white mt-12 pb-10">
-  <div class="flex flex-col gap-10 md:flex-row md:justify-center w-11/12 mx-auto py-16 border-b-2 border-[#6C7275]">
-    <div class="basis-3/6 flex flex-col gap-10">
+<footer class="bg-[#303BE4] py-20">
+
+  <div class="flex flex-col gap-5 md:gap-0 md:flex-row md:justify-between w-11/12 mx-auto border-b-[1px] border-gray-400 pb-10">
+
+    <div class="basis-8/12 flex flex-col gap-5 justify-between">
       <div>
-        <a href="{{ route('index') }}">
-          <img src="{{ asset('/images/img/logo_footer_decotab.png') }}" alt="decotab" /></a>
+        <img src="{{asset('/images/img/imgMundoWeb/image_31.png')}}" alt="mundo web">
       </div>
-      <p class="font-medium text-[20px]">
-        Deco Tab es reconocido por la excelente calidad de sus productos, como Wall Panel, mármol UV y piedra PU. La
-        empresa cuenta con un equipo capacitado en la producción de estos materiales que harán de tu espacio más moderno
-        y acogedor. ¿Te encuentras interesado? Contamos con oficinas en Lima y realizamos envíos a nivel nacional.
-      </p>
-      @foreach ($datosgenerales as $item)
-        <div class="flex gap-5">
+      
 
-          @if ($item->instagram)
-            <a href="{{ $item->instagram }}" target="_blank"><img src="{{ asset('/images/svg/instagram.svg') }}"
-                alt="instagram" /></a>
-          @endif
+      <div class="">
+        <a href="#"
+            class="border-white border-[1px] font-montserrat font-semibold text-white py-2 px-4 bg-[#303BE4] justify-center items-center gap-3 rounded-full inline-flex">
+            <span>Ir a la web</span>
 
-          @if ($item->facebook)
-            <a href="{{ $item->facebook }}" target="_blank"><img src="{{ asset('/images/svg/facebook.svg') }}"
-                alt="facebook" /></a>
-          @endif
-
-          @if ($item->youtube)
-            <a href="{{ $item->youtube }}" target="_blank"><img src="{{ asset('/images/svg/youtube.svg') }}"
-                alt="youtube" /></a>
-          @endif
-        </div>
-    </div>
-
-    <div class="basis-1/6 flex flex-col gap-5">
-      <h3 class="font-medium text-[16px]">Page</h3>
-
-      <a href="index.html" class="font-normal text-[14px]">Home</a>
-      <a href="catalogo.html" class="font-normal text-[14px]">Catálogo</a>
-      <a href="contacto.html" class="font-normal text-[14px]">Contacto</a>
-    </div>
-
-    <div class="basis-1/6 flex flex-col gap-5">
-      <h3 class="font-medium text-[16px]">Info</h3>
-
-      <a href="#" class="font-normal text-[14px]">Política de envíos</a>
-      <a href="#" class="font-normal text-[14px]">Reembolso de vuelta</a>
-      <a href="#" class="font-normal text-[14px]">Soporte</a>
-      <a href="#" class="font-normal text-[14px]">FAQs</a>
-    </div>
-
-    <div class="basis-1/6 flex flex-col gap-5">
-
-
-      <h3 class="font-medium text-[16px]">Office</h3>
-      <p class="font-normal text-[14px]">{{ $item->address }}</p>
-      <p class="font-normal text-[14px]">
-        @if ($item->district && $item->city)
-          {{ $item->district }}, {{ $item->city }}
-        @elseif ($item->district)
-          {{ $item->district }}
-        @elseif ($item->city)
-          {{ $item->city }}
-        @endif
-      </p>
-      <p class="font-normal text-[14px]">{{ $item->country }}</p>
-      <p class="font-normal text-[14px]">{{ $item->cellphone }}</p>
-      @endforeach
-    </div>
-  </div>
-
-  <div class="mt-5 flex flex-col md:flex-row md:justify-between md:items-center gap-5 w-11/12 mx-auto">
-    <div class="flex flex-col md:flex-row gap-2">
-      <p class="font-normal text-[12px]">
-        Copyright &copy; 2023 Mundo Web. Reservados todos los derechos
-      </p>
-      <p class="hidden md:block">|</p>
+            <div>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="20" fill="white" />
+                    <path
+                        d="M16.4583 15.0808L24.9803 15.0807M24.9803 15.0807L24.9803 23.4815M24.9803 15.0807L15.0808 24.9802"
+                        stroke="#303BE4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </a>
+      </div>
 
       <div class="flex gap-5">
-        <a href="#" class="font-normal text-[12px] text-[#6C7275]">Política de privacidad</a>
-        <a href="#" class="font-normal text-[12px] text-[#6C7275]">Términos y Condiciones</a>
+
+        <img src="{{asset('/images/img/imgMundoWeb/Instagram.svg')}}" alt="instagram">
+        <img src="{{asset('/images/img/imgMundoWeb/Facebook.svg')}}" alt="facebook">
+
       </div>
     </div>
 
-    <div class="flex flex-wrap gap-2 pb-5">
-      <img src="{{ asset('images/svg/visa.svg') }}" alt="visa" />
-      <img src="{{ asset('images/svg/american.svg') }}" alt="american" />
-      <img src="{{ asset('images/svg/mastercad.svg') }}" alt="mastercad" />
-      <img src="{{ asset('images/svg/stripe.svg') }}" alt="stripe" />
-      <img src="{{ asset('images/svg/paypal.svg') }}" alt="paypal" />
-      <img src="{{ asset('images/svg/pay.svg') }}" alt="pay" />
+    <div class="basis-4/12 text-white">
+
+      <div class="">
+        <p class="font-montserrat font-normal text-text16 pb-5">Dirección</p>
+        <p class="font-montserrat font-normal text-text16">Centro Empresarial Peruano - Suizo</p>
+        <p class="font-montserrat font-normal text-text16">Av. Aramburú 150 - Miraflores, Oficina 4B, Lima, Lima 51, PE</p>
+  
+      </div>
+      
+      <div>
+        <p class="font-montserrat font-normal text-text16 py-5">Horario</p>
+        <p class="font-montserrat font-normal text-text16">Lunes - Viernes 8am - 6pm</p>
+        <p class="font-montserrat font-normal text-text16">Sábados 9am - 1pm</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="flex gap-2 md:gap-0 flex-col items-start md:flex-row md:justify-between md:items-center text-white w-11/12 mx-auto font-montserrat text-text14 pt-10">
+    <p>Copyright &copy; 2024 Mundo Web. Reservados todos los derechos.</p>
+
+    <div class="flex gap-2 md:flex-row  md:items-center md:gap-10 justify-between md:justify-end w-full">
+      <a href="#">hola@mundoweb.pe</a>
+      <p>+51 934 464 915</p>
     </div>
   </div>
+  
 </footer>
