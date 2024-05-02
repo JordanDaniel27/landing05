@@ -2,6 +2,27 @@
 
 @section('css_importados')
 
+<style>
+    .bg_fondoMain{
+        background-image: url({{asset('images/img/imgMundoWeb/image_33.png')}});
+    }
+
+    .bg_fondoMainMobile{
+        background-image: url({{asset('images/img/imgMundoWeb/image_14.png')}});
+    }
+
+       
+    @media (min-width: 768px){
+            .bg_fondoMain {
+            background-image: url({{asset('images/img/imgMundoWeb/image_2.png')}});
+        }
+
+        .bg_fondoMainMobile{
+        background-image: url({{asset('images/img/imgMundoWeb/image_34.png')}});
+        }
+    }
+</style>
+
 @stop
 
 
@@ -9,7 +30,7 @@
 
     <main>
 
-        <section class="bg-fondoMainMobile md:bg-fondoMain bg-cover bg-center bg-no-repeat sm:w-full h-full pt-40 md:pt-32">
+        <section class="bg_fondoMain bg-cover bg-center bg-no-repeat sm:w-full h-full pt-40 md:pt-32">
             <div class="flex flex-col lg:flex-row justify-between gap-10">
                 <div class="basis-1/2 flex flex-col gap-5 px-5 md:pl-16 pt-16  md:pb-0">
                     {{-- tipografia h1 --}}
