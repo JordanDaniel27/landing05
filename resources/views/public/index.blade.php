@@ -11,7 +11,7 @@
 
         <section class="bg-fondoMainMobile md:bg-fondoMain bg-cover bg-center bg-no-repeat sm:w-full h-full pt-40 md:pt-32">
             <div class="flex flex-col lg:flex-row justify-between gap-10">
-                <div class="basis-1/2 flex flex-col gap-5 px-5 md:pl-16 pt-16 pb-16 md:pb-0">
+                <div class="basis-1/2 flex flex-col gap-5 px-5 md:pl-16 pt-16  md:pb-0">
                     {{-- tipografia h1 --}}
                     <h1 class="font-grotesk text-text32 md:text-text64 leading-tight text-[#050A41]"><span
                             class="text-[#E15A29]">¡Nuestra pasión,</span> tu
@@ -54,6 +54,10 @@
 
                 <div class="hidden basis-1/2 md:flex items-start justify-end">
                     <img src="{{ asset('images/img/imgMundoWeb/image_4.png') }}" alt="mundo web" class="">
+                </div>
+
+                <div class=" basis-1/2 flex md:hidden items-start justify-center py-10">
+                    <img src="{{ asset('images/img/imgMundoWeb/image_35.png') }}" alt="mundo web" class="">
                 </div>
             </div>
         </section>
